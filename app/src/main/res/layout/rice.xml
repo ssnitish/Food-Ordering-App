@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:id="@+id/BRhome"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:id="@+id/BRprofile"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="RICE"
+        android:textSize="35sp"
+        android:id="@+id/BRICE"
+        android:layout_below="@+id/BRprofile"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="170dp"
+
+
+        android:layout_height="160dp"
+        android:id="@+id/Reggrice"
+        android:src="@drawable/egg_rice"
+        android:layout_below="@+id/BRICE"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="160dp"
+        android:id="@+id/Rchickenrice"
+        android:src="@drawable/chicken_rice"
+        android:layout_alignTop="@+id/Reggrice"
+        android:layout_alignEnd="@+id/BRprofile" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Egg Rice"
+        android:id="@+id/textView10"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rs. 35/plate"
+        android:id="@+id/Rerp"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Chicken Rice"
+        android:id="@+id/Rcrname"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/Rchickenrice" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rs. 40/plate"
+        android:id="@+id/Rcrprice"
+        android:layout_below="@+id/Rcrname"
+        android:layout_alignStart="@+id/Rcrname" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select"
+        android:id="@+id/Rreggrice"
+        android:layout_below="@+id/Rerp"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select"
+        android:id="@+id/Rrbchickenrice"
+        android:layout_below="@+id/Rcrprice"
+        android:layout_alignStart="@+id/Rcrprice"
+        android:checked="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Rchickenriceqnty"
+        android:hint="Qnty"
+        android:layout_alignBottom="@+id/Rrbchickenrice"
+        android:layout_toEndOf="@+id/Rcrprice" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Reggriceqnty"
+        android:hint="Qnty"
+        android:layout_alignBottom="@+id/Rreggrice"
+        android:layout_toEndOf="@+id/textView10" />
+
+
+</RelativeLayout>

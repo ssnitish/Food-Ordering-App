@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:id="@+id/Shome"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sam@123"
+        android:id="@+id/Sprofile"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onButtonClick" />
+
+
+    <TextView android:text="SNACKS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Snacks"
+        android:textSize="35sp"
+        android:layout_below="@+id/Sprofile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="170dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/burger"
+        android:layout_below="@+id/Snacks"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Burger"
+        android:id="@+id/Sburgertext"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignEnd="@+id/Shome" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="RS. 40/piece"
+        android:id="@+id/Sburgerprice"
+        android:layout_below="@+id/Sburgertext"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select"
+        android:id="@+id/Sbuegerselect"
+        android:layout_below="@+id/Sburgerprice"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Sburgerqnty"
+        android:hint="Qunty"
+        android:layout_alignBottom="@+id/Sbuegerselect"
+        android:layout_toEndOf="@+id/Sburgerprice" />
+
+
+</RelativeLayout>

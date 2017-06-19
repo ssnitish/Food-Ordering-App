@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sam@123"
+        android:id="@+id/Bprofile"
+        android:layout_alignParentStart="true"
+        android:onClick="onButtonClick" />
+
+
+    <TextView android:text="HOME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home"
+        android:textSize="35sp"
+        android:layout_below="@id/Bprofile"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView android:text="MENU" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu"
+        android:textSize="25sp"
+        android:layout_below="@+id/home"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="Paratha"
+        android:id="@+id/Bparatha"
+        android:layout_below="@+id/menu"
+        android:layout_alignParentStart="true"
+        android:onClick="onButtonClick" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="Veg Curry"
+        android:id="@+id/Bcurry"
+        android:layout_below="@+id/Bparatha"
+        android:layout_alignParentStart="true"
+        android:onClick="onButtonClick"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="Rice"
+        android:id="@+id/Brice"
+        android:layout_below="@+id/Bcurry"
+        android:layout_alignParentStart="true"
+        android:onClick="onButtonClick"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="Snacks"
+        android:id="@+id/Bsnacks"
+        android:layout_below="@+id/Brice"
+        android:layout_alignParentStart="true"
+        android:onClick="onButtonClick"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="Drinks"
+        android:id="@+id/Bdrinks"
+        android:layout_below="@+id/Bsnacks"
+        android:layout_alignParentStart="true"
+        android:onClick="onButtonClick"/>
+
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/aloopartha"
+        android:src="@drawable/paratha"
+        android:layout_above="@+id/Bsnacks"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/home" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="aloo Paratha"
+        android:id="@+id/talooparatha"
+        android:layout_marginStart="54dp"
+        android:layout_alignTop="@+id/Brice"
+        android:layout_alignStart="@+id/aloopartha" />
+
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        android:id="@+id/chicken_65"
+        android:src="@drawable/fried_chicken"
+        android:layout_below="@+id/aloopartha"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/aloopartha" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Chicken 65"
+        android:id="@+id/tchicken65"
+        android:layout_below="@+id/chicken_65"
+        android:layout_alignStart="@+id/talooparatha" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rs.40/plate"
+        android:id="@+id/pricechiken65"
+        android:layout_below="@+id/tchicken65"
+        android:layout_alignStart="@+id/tchicken65" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rs.8/piece"
+        android:id="@+id/pricealooparatha"
+        android:layout_below="@+id/talooparatha"
+        android:layout_alignStart="@+id/talooparatha" />
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="Non-Veg"
+        android:id="@+id/Bnonveg"
+        android:layout_below="@+id/Bdrinks"
+        android:layout_alignParentStart="true"
+        android:onClick="onButtonClick"/>
+
+
+</RelativeLayout>
